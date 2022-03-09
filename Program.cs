@@ -1,47 +1,36 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp4
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-			int dayno;
+        xyz ob = new xyz();
+        String res = ob.evenodd(10);
+        Console.WriteLine(res);
+        Console.ReadKey();
+    }
+}
+class xyz
+{
+    public string evenodd(int a)
+    {
+        //return a % 2 == 0 ? "Even" : "odd";
 
-			dayno = Convert.ToInt32(Console.ReadLine());
 
-			switch (dayno)
-			{
-				case 1:
-					Console.Write("Monday");
-					break;
-				case 2:
-					Console.Write("Tuesday");
-					break;
-				case 3:
-					Console.Write("Wednesday");
-					break;
-				case 4:
-					Console.Write("Thursday");
-					break;
-				case 5:
-					Console.Write("Friday");
-					break;
-				case 6:
-					Console.Write("Saturday");
-					break;
-				case 7:
-					Console.Write("Sunday");
-					break;
-				default:
-					Console.Write("Invalid day number. \nPlease try again ....\n");
-					break;
-			}
-					Console.ReadKey();
-			}
-		}
-	}
+        //if (a % 2 == 0)
+        //    return "even";
+        //else
+        //    return "odd";
+
+
+
+        String res = "";
+        if (a % 2 == 0)
+            res = "even";
+        else
+            res = "odd";
+                return res;
+
+
+    }
+}
