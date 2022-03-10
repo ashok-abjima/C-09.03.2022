@@ -4,33 +4,25 @@ class Program
 {
     static void Main()
     {
-        xyz ob = new xyz();
-        String res = ob.evenodd(10);
-        Console.WriteLine(res);
+        abc obj = new abc();
+        string r = obj.calc();
+        Console.WriteLine(r);
         Console.ReadKey();
+        ;
     }
 }
-class xyz
+class abc
 {
-    public string evenodd(int a)
+
+    public string calc(int n1,int n2)
     {
-        //return a % 2 == 0 ? "Even" : "odd";
-
-
-        //if (a % 2 == 0)
-        //    return "even";
-        //else
-        //    return "odd";
-
-
-
-        String res = "";
-        if (a % 2 == 0)
-            res = "even";
-        else
-            res = "odd";
-                return res;
-
+        string sum = " ";
+        Convert.ToString(sum);
+        Convert.ToInt32(n1 + n2);
+        sum = n1 + n2;
+        return sum; 
+        
+        
 
     }
 }
